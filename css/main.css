@@ -273,10 +273,10 @@ body {
     }
 
     .header__title {
-        font-size: calc(36px + 36 * ((100vw - 554px) / (1920 - 554)));
+        font-size: calc(60px + 12 * ((100vw - 1195px) / (1920 - 1195)));
     }
     .highlight-text {
-        font-size: calc(100px + 100 * ((100vw - 554px) / (1920 - 554)));
+        font-size: calc(150px + 50 * ((100vw - 1195px) / (1920 - 1195)));
     }
     
     .footer {
@@ -297,7 +297,7 @@ body {
         font-size: calc(36px + 24 * ((100vw - 554px) / (1194 - 554)));
     }
     .highlight-text {
-        font-size: calc(100px + 150 * ((100vw - 554px) / (1194 - 554)));
+        font-size: calc(100px + 50 * ((100vw - 554px) / (1194 - 554)));
     }
 }
 @media (max-width: 553.9px) {
