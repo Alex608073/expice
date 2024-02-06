@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expice Restaurant Template</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -15,40 +15,56 @@
         <div class="wrapper">
             <div class="inner header__content">
                 <div class="header__menu">
-                    <a href="#" class="header__logo">expice</a>
-                    <nav class="nav header__nav">
-                        <a href="#" class="nav__item header__nav-item">Menu One</a>
-                        <a href="#" class="nav__item header__nav-item">Menu Two</a>
-                        <a href="#" class="nav__item header__nav-item">Menu Three</a>
-                        <a href="#" class="nav__item header__nav-item">Menu Four</a>
-                    </nav>
-                    <div class="header__user">
-                        <span class="header__userpic">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25.6066 19.3934C23.9729 17.7596 22.0283 16.5502 19.9066 15.8181C22.179 14.253 23.6719 11.6337 23.6719 8.67188C23.6719 3.89021 19.7817 0 15 0C10.2183 0 6.32812 3.89021 6.32812 8.67188C6.32812 11.6337 7.82103 14.253 10.0935 15.8181C7.9718 16.5502 6.02719 17.7596 4.39342 19.3934C1.56029 22.2265 0 25.9934 0 30H2.34375C2.34375 23.0213 8.02131 17.3438 15 17.3438C21.9787 17.3438 27.6562 23.0213 27.6562 30H30C30 25.9934 28.4397 22.2265 25.6066 19.3934ZM15 15C11.5107 15 8.67188 12.1613 8.67188 8.67188C8.67188 5.1825 11.5107 2.34375 15 2.34375C18.4893 2.34375 21.3281 5.1825 21.3281 8.67188C21.3281 12.1613 18.4893 15 15 15Z"
-                                    fill="#2E266F" />
-                            </svg>
-                        </span>
-                        <div class="header__username">user</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"
-                            fill="none">
-                            <path
-                                d="M4.47171 4.25311L0.220381 1.35447C-0.0734605 1.15413 -0.0734605 0.830161 0.220381 0.631945L0.926852 0.15026C1.22069 -0.0500867 1.69584 -0.0500867 1.98656 0.15026L5 2.20488L8.01344 0.15026C8.30728 -0.0500867 8.78243 -0.0500867 9.07315 0.15026L9.77962 0.631945C10.0735 0.832292 10.0735 1.15626 9.77962 1.35447L5.52829 4.25311C5.2407 4.45346 4.76555 4.45346 4.47171 4.25311Z"
-                                fill="white" />
-                        </svg>
-                    </div>
+                    <nav class="navbar navbar-expand-xl w-100 header__navbar">
+                        <div class="container-fluid navbar__container">
+                          <a class="navbar-brand header__logo" href="#">expice</a>
+                          <button class="navbar-toggler header__navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                            <span class="navbar-toggler-item"></span>
+                            <span class="navbar-toggler-item"></span>
+                            <span class="navbar-toggler-item"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav header__nav">
+                              <a class="nav-link nav__item header__nav-item active" aria-current="page" href="#">Menu One</a>
+                              <a class="nav-link nav__item header__nav-item" href="#">Menu Two</a>
+                              <a class="nav-link nav__item header__nav-item" href="#">Menu Three</a>
+                              <a class="nav-link nav__item header__nav-item" href="#">Menu Four</a>
+                            </div>
+                            <div class="header__user">
+                                <span class="header__userpic">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.6066 19.3934C23.9729 17.7596 22.0283 16.5502 19.9066 15.8181C22.179 14.253 23.6719 11.6337 23.6719 8.67188C23.6719 3.89021 19.7817 0 15 0C10.2183 0 6.32812 3.89021 6.32812 8.67188C6.32812 11.6337 7.82103 14.253 10.0935 15.8181C7.9718 16.5502 6.02719 17.7596 4.39342 19.3934C1.56029 22.2265 0 25.9934 0 30H2.34375C2.34375 23.0213 8.02131 17.3438 15 17.3438C21.9787 17.3438 27.6562 23.0213 27.6562 30H30C30 25.9934 28.4397 22.2265 25.6066 19.3934ZM15 15C11.5107 15 8.67188 12.1613 8.67188 8.67188C8.67188 5.1825 11.5107 2.34375 15 2.34375C18.4893 2.34375 21.3281 5.1825 21.3281 8.67188C21.3281 12.1613 18.4893 15 15 15Z"
+                                            fill="#2E266F" />
+                                    </svg>
+                                </span>
+                                <div class="header__username">user</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"
+                                    fill="none">
+                                    <path
+                                        d="M4.47171 4.25311L0.220381 1.35447C-0.0734605 1.15413 -0.0734605 0.830161 0.220381 0.631945L0.926852 0.15026C1.22069 -0.0500867 1.69584 -0.0500867 1.98656 0.15026L5 2.20488L8.01344 0.15026C8.30728 -0.0500867 8.78243 -0.0500867 9.07315 0.15026L9.77962 0.631945C10.0735 0.832292 10.0735 1.15626 9.77962 1.35447L5.52829 4.25311C5.2407 4.45346 4.76555 4.45346 4.47171 4.25311Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
                 <div class="header__section">
                     <h1 class="header__title">
                         <span class="highlight-text">Food</span>
                         Discover Restaurant <br>& Delicious Food
                     </h1>
-
                 </div>
-                <div class="header__overlay"></div>
+                <div class="header__section header-search">
+                    <form class="d-flex w-100 h-100 header-search__form" role="search">
+                        <input class="form-control me-2" type="search" placeholder="search restaurant, food" aria-label="search restaurant, food">
+                        <button class="btn btn-outline-success" type="submit">go</button>
+                    </form>
+                </div>
             </div>
+            <div class="header__overlay"></div>
         </div>
     </header>
     <!-- header end -->
@@ -136,6 +152,8 @@
     <!-- A picture for the background -->
     <img src="img/pic-bg.png" alt="" class="header__pic-bg">
     <div class="underlying-layer"></div>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
